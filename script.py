@@ -7,26 +7,28 @@ col = int(sys.argv[2])
 size = int(sys.argv[3])
 
 # The header part
-print("|")
+table = "|"
 for y in range(col):
     for z in range(size):
-        print(" ")
-    print("|")
-print("\n")
+        table = table + " "
+    table = table + "|"
+table = table + "\n"
 
 # The separator from header and regular data
-print("|")
+table = table + "|"
 for y in range(col):
     for z in range(size):
-        print("-")
-    print("|")
-print("\n")
+        table = table + "-"
+    table = table + "|"
+table = table + "\n"
 
 # The data part (applies row)
 for x in range(row):
-    print("|")
+    table = table + "|"
     for y in range(col):
         for z in range(size):
-            print(" ")
-        print("|")
-    print("\n")
+            table = table + " "
+        table = table + "|"
+    table = table + "\n"
+
+print(table)
