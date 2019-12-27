@@ -12,9 +12,9 @@ class TableCreator:
         :param size:
         """
 
-        self.row = row
-        self.col = col
-        self.size = size
+        self.row = int(row)
+        self.col = int(col)
+        self.size = int(size)
         self.table = ""
         pass
 
