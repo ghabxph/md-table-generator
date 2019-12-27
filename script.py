@@ -2,9 +2,9 @@
 
 import sys
 
-row = sys.argv[1]
-col = sys.argv[2]
-size = sys.argv[3]
+row = int(sys.argv[1])
+col = int(sys.argv[2])
+size = int(sys.argv[3])
 
 # The header part
 print("|")
